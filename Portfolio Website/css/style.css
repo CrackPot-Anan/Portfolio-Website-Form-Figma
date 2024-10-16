@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.row {
+  display: flex;
+}
+
+/* ===========================
+        Common CSS End
+========================== */
+
+/* ===========================
+        Menu Part Start
+========================== */
+
+#main_menu {
+  padding: 25px 0;
+}
+
+#main_menu .row {
+  align-items: center;
+}
+
+#main_menu .logo_col .logo {
+  width: 82px;
+}
+#main_menu .logo_col {
+  width: 30%;
+}
+
+#main_menu .menu_col {
+  width: 70%;
+}
+#main_menu .menu_col ul {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+}
+#main_menu .menu_col ul {
+  display: flex;
+  justify-content: end;
+  gap: 30px;
+}
+#main_menu .menu_col ul li a {
+  font-size: 16px;
+  font-weight: 400;
+  color: #232332;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ===========================
+        Menu Part End
+========================== */
+
+/* ===========================
+    Banner Part Start
+========================== */
+#banner {
+  background: url("../images/banner.png");
+  padding: 250px 0;
+}
+
+.banner_text h1 {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+.banner_text h1::after{
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 30px;
+  height: 3px;
+  background-color: #FFCE00;
+}
+
+.banner_text h1 span {
+  font-weight: 700;
+}
+
+.banner_text p {
+  padding: 22px 0;
+  width: 700px;
+  font-size: 18px;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.banner_text a {
+  font-size: 16px;
+  font-weight: 700;
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ===========================
+    Banner Part End
+========================== */
+
+/* ===========================
+    Portfolio Part Starts
+========================== */
+
+#portfolio {
+  padding: 120px 0px;
+}
+
+.portfolio_menu ul {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.portfolio_menu ul li a {
+  padding: 2px 8px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #3a3a3a;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  transition: all linear 0.3s;
+}
+
+.portfolio_menu ul li a:hover {
+  color: white;
+  background-color: #ffce00;
+}
+
+#portfolio .row {
+  gap: 20px;
+}
+
+#portfolio .row.center {
+  margin: 20px 0;
+}
+
+.view_more {
+  margin-top: 54px;
+  display: flex;
+  justify-content: center;
+}
+
+.view_more button {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+/* ===========================
+    Portfolio Part ENDS
+========================== */
+
+/* ===========================
+    Post Part Starts
+========================== */
+#post {
+  padding: 120px 0px;
+  background-color: #f8f8f8;
+}
+
+.post_header h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #262626;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  position: relative;
+}
+
+.post_header h2::before{
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 2px;
+  background-color: #232323;
+}
+
+.post_header p {
+  width: 683px;
+  font-size: 14px;
+  font-weight: 400;
+  font-style: italic;
+  color: #737272;
+  font-family: "Montserrat", sans-serif;
+  text-align: center;
+  margin: 20px auto;
+}
+
+#post .row {
+  gap: 20px;
+}
+
+.postItem_col {
+  width: 33%;
+  background-color: white;
+  box-shadow: -19px 32px 38px -19px rgba(0, 0, 0, 0.75);
+  /* box-shadow: 0px 2px 3px 0px #F0F0F0; */
+}
+
+.post_details {
+  padding: 20px;
+}
+
+.post_details h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #262626;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.post_details p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #737272;
+  font-family: "Open Sans", sans-serif;
+}
+
+.post_details .description {
+  padding: 8px 0 20px;
+}
+
+.post_detailsBottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.post_detailsBottom p,
+.post_detailsBottom a {
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+}
+
+/* ===========================
+Post Part Ends
+========================== */
+
+/* ===========================
+    Footer Part Starts
+========================== */
+#footer{
+  padding-top: 100px;
+}
+
+.footer_content{
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer_logo{
+  width: 82px;
+}
+
+.footer_content p{
+  width: 720px;
+  font-size: 14px;
+  font-weight: 400;
+  color: #737272;
+  font-family: "Open Sans", sans-serif;
+  line-height: 22px;
+  text-align: center;
+  padding: 20px 0 17px;
+}
+
+.footer_content a{
+  font-size: 14px;
+  font-weight: 700;
+  color: #333333;
+  font-family: "Open Sans", sans-serif;
+  line-height: 22px;
+
+}
+.footer_content ul{
+  display: flex;
+  margin-top: 30px;
+}
+
+.footer_content ul li a{
+  padding: 0 22px;
+  border-right: 2px solid #E5E5E5;
+  color: #888888;
+}
+
+.footer_content ul li:last-child a{
+  border-right: none;
+}
+
+.copyright{
+  padding: 23px 0;
+  text-align: center;
+  border-top: 1px solid #E5E5E5;
+}
+
+.copyright p{
+  font-size: 14px;
+  font-weight: 400;
+  color: #888888;
+  font-family: "Open Sans", sans-serif;
+  
+}
+
+.copyright p span{
+  color: #FFCE00;
+  text-transform: uppercase;
+}
+
+
+/* ===========================
+    Footer Part Ends
+========================== */
+
